@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  event_name: MyString
+  start_date: 2013-11-27
+  end_date: 2013-11-27
+  start_time: 2013-11-27 19:15:20
+  end_time: 2013-11-27 19:15:20
+  type_of_event: MyString
+  venue: MyString
+  ngo_id: 1
+
+two:
+  event_name: MyString
+  start_date: 2013-11-27
+  end_date: 2013-11-27
+  start_time: 2013-11-27 19:15:20
+  end_time: 2013-11-27 19:15:20
+  type_of_event: MyString
+  venue: MyString
+  ngo_id: 1

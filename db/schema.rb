@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131124155925) do
+ActiveRecord::Schema.define(version: 20131127134520) do
+
+  create_table "events", force: true do |t|
+    t.string   "event_name"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.string   "type_of_event"
+    t.string   "venue"
+    t.integer  "ngo_id",        null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "events", ["ngo_id"], name: "index_events_on_ngo_id"
 
   create_table "ngos", force: true do |t|
     t.string   "name"
